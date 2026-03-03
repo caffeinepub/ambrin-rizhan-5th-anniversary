@@ -6,14 +6,14 @@ interface Page1WelcomeProps {
 }
 
 const loveWords = [
-  { word: "My Love 💕", x: 2, y: 5, delay: 0, size: "lg" as const },
-  { word: "My Baby 🥰", x: 65, y: 4, delay: 0.9, size: "md" as const },
-  { word: "My Man 💪", x: 1, y: 35, delay: 1.6, size: "md" as const },
-  { word: "My Everything ✨", x: 60, y: 38, delay: 2.3, size: "lg" as const },
+  { word: "My Love 💕", x: 2, y: 4, delay: 0, size: "lg" as const },
+  { word: "My Baby 🥰", x: 68, y: 3, delay: 0.9, size: "md" as const },
+  { word: "My Man 💪", x: 0, y: 28, delay: 1.6, size: "md" as const },
+  { word: "My Everything ✨", x: 62, y: 30, delay: 2.3, size: "lg" as const },
   {
     word: "You Are Mine Forever 💍",
-    x: 25,
-    y: 88,
+    x: 22,
+    y: 18,
     delay: 3.1,
     size: "sm" as const,
   },
@@ -48,8 +48,8 @@ export default function Page1Welcome({ onNext }: Page1WelcomeProps) {
         {/* Heading */}
         <div className="space-y-2">
           <h1
-            className="shimmer-text font-heading text-4xl md:text-6xl font-bold leading-tight animate-fade-in-up"
-            style={{ animationDelay: "0.2s" }}
+            className="font-heading text-4xl md:text-6xl font-bold leading-tight animate-fade-in-up"
+            style={{ animationDelay: "0.2s", color: "white" }}
           >
             Happy 5th Anniversary
           </h1>

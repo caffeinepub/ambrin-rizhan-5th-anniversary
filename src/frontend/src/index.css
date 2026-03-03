@@ -161,9 +161,22 @@
   [class*="text-foreground"],
   [class*="text-black"],
   [class*="text-gray"],
-  [class*="text-slate"] {
+  [class*="text-slate"],
+  [class*="text-zinc"],
+  [class*="text-neutral"],
+  [class*="text-stone"] {
     color: oklch(0.97 0.02 80) !important;
     -webkit-text-fill-color: oklch(0.97 0.02 80) !important;
+  }
+
+  /* Ensure nothing ever renders black text anywhere */
+  *:not(svg):not(path):not(circle):not(rect) {
+    -webkit-text-fill-color: initial;
+  }
+
+  /* Hard override: nothing on the page should be black */
+  :not(input):not(textarea):not(select):not(button) {
+    color: inherit;
   }
 }
 

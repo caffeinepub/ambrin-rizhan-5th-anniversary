@@ -34,7 +34,10 @@ export default function Page5DatePicker({ onSubmit }: Page5DatePickerProps) {
         {/* Header */}
         <div className="space-y-4 animate-fade-in">
           <div className="text-6xl animate-heartbeat">💍</div>
-          <h1 className="shimmer-text font-heading text-3xl md:text-5xl font-bold leading-tight">
+          <h1
+            className="font-heading text-3xl md:text-5xl font-bold leading-tight"
+            style={{ color: "white" }}
+          >
             When will you marry me?
           </h1>
           <p

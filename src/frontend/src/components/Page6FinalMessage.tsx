@@ -143,7 +143,10 @@ export default function Page6FinalMessage({ date }: Page6FinalMessageProps) {
             >
               <div className="text-4xl animate-heartbeat">💍</div>
 
-              <p className="shimmer-text font-heading text-2xl md:text-3xl font-bold leading-tight">
+              <p
+                className="font-heading text-2xl md:text-3xl font-bold leading-tight"
+                style={{ color: "white" }}
+              >
                 I love you.
               </p>
 
@@ -168,7 +171,10 @@ export default function Page6FinalMessage({ date }: Page6FinalMessageProps) {
                 >
                   and get married on
                 </p>
-                <p className="shimmer-text font-heading text-xl md:text-2xl font-bold mt-1">
+                <p
+                  className="font-heading text-xl md:text-2xl font-bold mt-1"
+                  style={{ color: "white" }}
+                >
                   {formattedDate} 💍
                 </p>
               </div>

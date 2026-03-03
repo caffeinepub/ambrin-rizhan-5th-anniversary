@@ -41,7 +41,10 @@ export default function Page4Gallery({ onNext }: Page4GalleryProps) {
           <p className="text-pink-light font-body text-sm tracking-[0.35em] uppercase opacity-80">
             ✨ Our Story ✨
           </p>
-          <h1 className="shimmer-text font-heading text-3xl md:text-5xl font-bold">
+          <h1
+            className="font-heading text-3xl md:text-5xl font-bold"
+            style={{ color: "white" }}
+          >
             5 Years of Beautiful Moments
           </h1>
           <p

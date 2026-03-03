@@ -21,15 +21,15 @@ export default function FloatingWord({
 
   return (
     <div
-      className={`absolute font-heading font-semibold text-gold-light animate-float-word select-none pointer-events-none ${sizeClasses[size]}`}
+      className={`absolute font-heading font-semibold animate-float-word select-none pointer-events-none ${sizeClasses[size]}`}
       style={{
         left: `${x}%`,
         top: `${y}%`,
         animationDelay: `${delay}s`,
         animationDuration: `${3 + delay * 0.3}s`,
-        textShadow: "0 0 20px oklch(0.68 0.22 355)",
-        filter: "drop-shadow(0 0 8px oklch(0.68 0.22 355 / 0.6))",
-        color: "oklch(0.80 0.18 355)",
+        textShadow: "0 0 20px oklch(0.65 0.22 20)",
+        filter: "drop-shadow(0 0 8px oklch(0.65 0.22 20 / 0.6))",
+        color: "oklch(0.82 0.14 80)",
       }}
     >
       {word}

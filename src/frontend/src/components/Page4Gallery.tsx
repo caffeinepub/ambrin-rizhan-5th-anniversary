@@ -9,31 +9,26 @@ const photos = [
     src: "/assets/c3f26b76-aecb-4515-baf0-e49cdc8c1e1a.jpeg",
     alt: "Ambrin & Rizhan together",
     caption: "Our Love 💕",
-    year: "Year 1",
   },
   {
     src: "/assets/IMG_3398.jpeg",
     alt: "Ambrin & Rizhan",
     caption: "Us 🥰",
-    year: "Year 2",
   },
   {
     src: "/assets/8091dbc2-cc7f-4a1e-ba08-fdb5bcc516c3.jpeg",
     alt: "Beautiful memories",
     caption: "Memories 🌟",
-    year: "Year 3",
   },
   {
     src: "/assets/29c26291-48f1-486a-8845-5f7d73818568.jpeg",
     alt: "Together always",
     caption: "Always Together 💍",
-    year: "Year 4",
   },
   {
     src: "/assets/0d355efa-88f6-4d24-bc54-a43fbbc07400.jpeg",
     alt: "5 years of love",
     caption: "5 Years Strong 🌹",
-    year: "Year 5",
   },
 ];
 
@@ -49,7 +44,10 @@ export default function Page4Gallery({ onNext }: Page4GalleryProps) {
           <h1 className="shimmer-text font-heading text-3xl md:text-5xl font-bold">
             5 Years of Beautiful Moments
           </h1>
-          <p className="text-white/50 font-body text-sm">
+          <p
+            className="font-body text-sm"
+            style={{ color: "oklch(0.97 0.02 80 / 0.55)" }}
+          >
             Every picture tells our story 💕
           </p>
         </div>
@@ -65,12 +63,12 @@ export default function Page4Gallery({ onNext }: Page4GalleryProps) {
               className="absolute -inset-0.5 rounded-2xl opacity-50 blur-sm group-hover:opacity-90 transition-opacity duration-400"
               style={{
                 background:
-                  "linear-gradient(135deg, oklch(0.68 0.22 355), oklch(0.82 0.14 80), oklch(0.68 0.22 355))",
+                  "linear-gradient(135deg, oklch(0.65 0.22 20), oklch(0.82 0.14 80), oklch(0.65 0.22 20))",
               }}
             />
             <div
-              className="relative rounded-2xl overflow-hidden border shadow-[0_0_35px_oklch(0.68_0.22_355_/_0.2)]"
-              style={{ borderColor: "oklch(0.68 0.22 355 / 0.35)" }}
+              className="relative rounded-2xl overflow-hidden border shadow-[0_0_35px_oklch(0.65_0.22_20_/_0.2)]"
+              style={{ borderColor: "oklch(0.65 0.22 20 / 0.35)" }}
             >
               <img
                 src={photos[0].src}
@@ -81,24 +79,18 @@ export default function Page4Gallery({ onNext }: Page4GalleryProps) {
                 className="absolute inset-0"
                 style={{
                   background:
-                    "linear-gradient(to top, oklch(0.10 0.06 280 / 0.65), transparent 55%)",
+                    "linear-gradient(to top, oklch(0.10 0.05 10 / 0.65), transparent 55%)",
                 }}
               />
-              <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between">
+              <div className="absolute bottom-3 left-4 right-4 flex items-center justify-center">
                 <span
-                  className="text-white font-heading text-sm font-semibold px-3 py-1 rounded-full backdrop-blur-sm"
-                  style={{ background: "oklch(0.10 0.06 280 / 0.55)" }}
-                >
-                  {photos[0].caption}
-                </span>
-                <span
-                  className="font-body text-xs px-2 py-0.5 rounded-full"
+                  className="font-heading text-sm font-semibold px-3 py-1 rounded-full backdrop-blur-sm"
                   style={{
-                    color: "oklch(0.82 0.14 80)",
-                    background: "oklch(0.82 0.14 80 / 0.12)",
+                    color: "oklch(0.97 0.02 80)",
+                    background: "oklch(0.10 0.05 10 / 0.55)",
                   }}
                 >
-                  {photos[0].year}
+                  {photos[0].caption}
                 </span>
               </div>
             </div>
@@ -115,11 +107,11 @@ export default function Page4Gallery({ onNext }: Page4GalleryProps) {
                 className="absolute -inset-0.5 rounded-xl opacity-40 blur-sm group-hover:opacity-80 transition-opacity duration-400"
                 style={{
                   background:
-                    "linear-gradient(135deg, oklch(0.82 0.14 80), oklch(0.68 0.22 355))",
+                    "linear-gradient(135deg, oklch(0.82 0.14 80), oklch(0.65 0.22 20))",
                 }}
               />
               <div
-                className="relative rounded-xl overflow-hidden border shadow-[0_0_20px_oklch(0.68_0.22_355_/_0.12)]"
+                className="relative rounded-xl overflow-hidden border shadow-[0_0_20px_oklch(0.65_0.22_20_/_0.12)]"
                 style={{ borderColor: "oklch(0.82 0.14 80 / 0.25)" }}
               >
                 <img
@@ -131,21 +123,18 @@ export default function Page4Gallery({ onNext }: Page4GalleryProps) {
                   className="absolute inset-0"
                   style={{
                     background:
-                      "linear-gradient(to top, oklch(0.10 0.06 280 / 0.65), transparent 55%)",
+                      "linear-gradient(to top, oklch(0.10 0.05 10 / 0.65), transparent 55%)",
                   }}
                 />
-                <div className="absolute bottom-2 left-2 right-2 flex items-center justify-between">
+                <div className="absolute bottom-2 left-2 right-2 flex items-center justify-center">
                   <span
-                    className="text-white font-heading text-xs font-semibold px-2 py-0.5 rounded-full backdrop-blur-sm"
-                    style={{ background: "oklch(0.10 0.06 280 / 0.55)" }}
+                    className="font-heading text-xs font-semibold px-2 py-0.5 rounded-full backdrop-blur-sm"
+                    style={{
+                      color: "oklch(0.97 0.02 80)",
+                      background: "oklch(0.10 0.05 10 / 0.55)",
+                    }}
                   >
                     {photo.caption}
-                  </span>
-                  <span
-                    className="font-body text-xs"
-                    style={{ color: "oklch(0.82 0.14 80 / 0.7)" }}
-                  >
-                    {photo.year}
                   </span>
                 </div>
               </div>

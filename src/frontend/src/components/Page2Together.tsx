@@ -21,8 +21,11 @@ export default function Page2Together({ onNext }: Page2TogetherProps) {
           style={{ animationDelay: "0.2s" }}
         >
           <h1
-            className="font-heading text-5xl md:text-7xl font-bold text-white"
-            style={{ textShadow: "0 0 40px oklch(0.68 0.22 355 / 0.5)" }}
+            className="font-heading text-5xl md:text-7xl font-bold"
+            style={{
+              color: "oklch(0.97 0.02 80)",
+              textShadow: "0 0 40px oklch(0.65 0.22 20 / 0.5)",
+            }}
           >
             Ambrin
           </h1>
@@ -31,7 +34,7 @@ export default function Page2Together({ onNext }: Page2TogetherProps) {
               className="h-px w-16"
               style={{
                 background:
-                  "linear-gradient(to right, transparent, oklch(0.68 0.22 355))",
+                  "linear-gradient(to right, transparent, oklch(0.65 0.22 20))",
               }}
             />
             <span className="text-3xl animate-heartbeat">💗</span>
@@ -39,13 +42,16 @@ export default function Page2Together({ onNext }: Page2TogetherProps) {
               className="h-px w-16"
               style={{
                 background:
-                  "linear-gradient(to left, transparent, oklch(0.68 0.22 355))",
+                  "linear-gradient(to left, transparent, oklch(0.65 0.22 20))",
               }}
             />
           </div>
           <h1
-            className="font-heading text-5xl md:text-7xl font-bold text-white"
-            style={{ textShadow: "0 0 40px oklch(0.68 0.22 355 / 0.5)" }}
+            className="font-heading text-5xl md:text-7xl font-bold"
+            style={{
+              color: "oklch(0.97 0.02 80)",
+              textShadow: "0 0 40px oklch(0.65 0.22 20 / 0.5)",
+            }}
           >
             Rizhan
           </h1>
@@ -78,11 +84,11 @@ export default function Page2Together({ onNext }: Page2TogetherProps) {
             className="absolute -inset-1.5 rounded-3xl opacity-60 blur-md"
             style={{
               background:
-                "linear-gradient(135deg, oklch(0.82 0.14 80), oklch(0.68 0.22 355), oklch(0.82 0.14 80))",
+                "linear-gradient(135deg, oklch(0.82 0.14 80), oklch(0.65 0.22 20), oklch(0.82 0.14 80))",
             }}
           />
           <div
-            className="relative rounded-3xl overflow-hidden border-2 shadow-[0_0_50px_oklch(0.68_0.22_355_/_0.3)]"
+            className="relative rounded-3xl overflow-hidden border-2 shadow-[0_0_50px_oklch(0.65_0.22_20_/_0.3)]"
             style={{ borderColor: "oklch(0.82 0.14 80 / 0.45)" }}
           >
             <img
@@ -94,13 +100,16 @@ export default function Page2Together({ onNext }: Page2TogetherProps) {
               className="absolute inset-0"
               style={{
                 background:
-                  "linear-gradient(to top, oklch(0.10 0.06 280 / 0.55), transparent 60%)",
+                  "linear-gradient(to top, oklch(0.10 0.05 10 / 0.55), transparent 60%)",
               }}
             />
             <div className="absolute bottom-4 left-0 right-0 text-center">
               <span
-                className="text-white font-heading text-sm font-semibold px-4 py-1 rounded-full backdrop-blur-sm"
-                style={{ background: "oklch(0.10 0.06 280 / 0.55)" }}
+                className="font-heading text-sm font-semibold px-4 py-1 rounded-full backdrop-blur-sm"
+                style={{
+                  color: "oklch(0.97 0.02 80)",
+                  background: "oklch(0.10 0.05 10 / 0.55)",
+                }}
               >
                 Ambrin & Rizhan 💕
               </span>
@@ -112,12 +121,15 @@ export default function Page2Together({ onNext }: Page2TogetherProps) {
         <div
           className="w-full animate-fade-in-up rounded-2xl border p-4 text-center backdrop-blur-sm"
           style={{
-            borderColor: "oklch(0.68 0.22 355 / 0.25)",
-            background: "oklch(0.68 0.22 355 / 0.06)",
+            borderColor: "oklch(0.65 0.22 20 / 0.25)",
+            background: "oklch(0.65 0.22 20 / 0.06)",
             animationDelay: "0.7s",
           }}
         >
-          <p className="text-white/70 font-body text-sm">
+          <p
+            className="font-body text-sm"
+            style={{ color: "oklch(0.97 0.02 80 / 0.75)" }}
+          >
             That's{" "}
             <span className="text-pink-light font-semibold">1,826 days</span> of
             loving each other, growing together, and making beautiful memories

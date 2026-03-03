@@ -37,7 +37,10 @@ export default function Page5DatePicker({ onSubmit }: Page5DatePickerProps) {
           <h1 className="shimmer-text font-heading text-3xl md:text-5xl font-bold leading-tight">
             When will you marry me?
           </h1>
-          <p className="text-white/50 font-body text-sm">
+          <p
+            className="font-body text-sm"
+            style={{ color: "oklch(0.97 0.02 80 / 0.55)" }}
+          >
             Pick the date that will change our lives forever 💕
           </p>
         </div>
@@ -52,14 +55,14 @@ export default function Page5DatePicker({ onSubmit }: Page5DatePickerProps) {
               className="absolute -inset-0.5 rounded-2xl opacity-55 blur-sm"
               style={{
                 background:
-                  "linear-gradient(135deg, oklch(0.68 0.22 355), oklch(0.82 0.14 80), oklch(0.68 0.22 355))",
+                  "linear-gradient(135deg, oklch(0.65 0.22 20), oklch(0.82 0.14 80), oklch(0.65 0.22 20))",
               }}
             />
             <div
               className="relative backdrop-blur-sm rounded-2xl border p-6 space-y-4"
               style={{
-                borderColor: "oklch(0.68 0.22 355 / 0.35)",
-                background: "oklch(0.15 0.08 280 / 0.85)",
+                borderColor: "oklch(0.65 0.22 20 / 0.35)",
+                background: "oklch(0.15 0.07 15 / 0.85)",
               }}
             >
               <label
@@ -78,10 +81,13 @@ export default function Page5DatePicker({ onSubmit }: Page5DatePickerProps) {
                   setError("");
                 }}
                 data-ocid="date_picker.input"
-                className="w-full rounded-xl px-4 py-3 text-white font-body text-base focus:outline-none transition-all duration-200 [color-scheme:dark]"
+                className="w-full rounded-xl px-4 py-3 font-body text-base focus:outline-none transition-all duration-200 [color-scheme:dark]"
                 style={{
-                  background: "oklch(0.68 0.22 355 / 0.08)",
-                  border: "1px solid oklch(0.68 0.22 355 / 0.35)",
+                  background: "oklch(0.20 0.09 15)",
+                  border: "1px solid oklch(0.65 0.22 20 / 0.55)",
+                  color: "oklch(0.97 0.02 80)",
+                  WebkitTextFillColor: "oklch(0.97 0.02 80)",
+                  colorScheme: "dark",
                 }}
               />
               {date && (
@@ -116,7 +122,10 @@ export default function Page5DatePicker({ onSubmit }: Page5DatePickerProps) {
           >
             📸 Now take a screenshot and send it to Ambrin!
           </p>
-          <p className="text-white/50 font-body text-xs mt-1">
+          <p
+            className="font-body text-xs mt-1"
+            style={{ color: "oklch(0.97 0.02 80 / 0.55)" }}
+          >
             She's waiting to see your answer 💕
           </p>
         </div>

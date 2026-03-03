@@ -1,4 +1,34 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Nunito:wght@300;400;500;600&display=swap");
+@font-face {
+  font-family: "Fraunces";
+  src: url("/assets/fonts/Fraunces.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  src: url("/assets/fonts/InstrumentSerif-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  src: url("/assets/fonts/InstrumentSerif-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("/assets/fonts/Outfit.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 @tailwind base;
 @tailwind components;
@@ -8,55 +38,55 @@
   :root {
     --radius: 0.75rem;
 
-    /* Midnight romance palette */
-    --midnight: oklch(0.1 0.06 280);
-    --deep-navy: oklch(0.15 0.08 280);
-    --navy-mid: oklch(0.22 0.1 285);
-    --violet-soft: oklch(0.3 0.12 290);
-    --pink-glow: oklch(0.68 0.22 355);
-    --pink-light: oklch(0.8 0.18 355);
-    --magenta: oklch(0.6 0.26 340);
+    /* Deep burgundy romance palette */
+    --midnight: oklch(0.1 0.05 10);
+    --deep-navy: oklch(0.15 0.07 15);
+    --navy-mid: oklch(0.2 0.09 15);
+    --violet-soft: oklch(0.28 0.1 15);
+    --pink-glow: oklch(0.65 0.22 20);
+    --pink-light: oklch(0.78 0.18 20);
+    --magenta: oklch(0.6 0.26 15);
     --rose-warm: oklch(0.65 0.2 15);
     --gold: oklch(0.82 0.14 80);
     --gold-light: oklch(0.9 0.1 80);
-    --star-white: oklch(0.96 0.02 280);
+    --star-white: oklch(0.97 0.02 80);
 
     /* deep-burgundy kept as alias for bg */
-    --deep-burgundy: oklch(0.1 0.06 280);
+    --deep-burgundy: oklch(0.1 0.05 10);
 
     /* Shadcn tokens */
-    --background: 0.1 0.06 280;
-    --foreground: 0.96 0.02 280;
-    --card: 0.15 0.08 280;
-    --card-foreground: 0.96 0.02 280;
-    --popover: 0.15 0.08 280;
-    --popover-foreground: 0.96 0.02 280;
-    --primary: 0.68 0.22 355;
-    --primary-foreground: 0.1 0.06 280;
-    --secondary: 0.3 0.12 290;
-    --secondary-foreground: 0.96 0.02 280;
-    --muted: 0.22 0.1 285;
-    --muted-foreground: 0.65 0.08 280;
-    --accent: 0.3 0.12 290;
-    --accent-foreground: 0.96 0.02 280;
+    --background: 0.1 0.05 10;
+    --foreground: 0.97 0.02 80;
+    --card: 0.15 0.07 15;
+    --card-foreground: 0.97 0.02 80;
+    --popover: 0.15 0.07 15;
+    --popover-foreground: 0.97 0.02 80;
+    --primary: 0.65 0.22 20;
+    --primary-foreground: 0.97 0.02 80;
+    --secondary: 0.28 0.1 15;
+    --secondary-foreground: 0.97 0.02 80;
+    --muted: 0.2 0.09 15;
+    --muted-foreground: 0.7 0.08 20;
+    --accent: 0.28 0.1 15;
+    --accent-foreground: 0.97 0.02 80;
     --destructive: 0.577 0.245 27.325;
     --destructive-foreground: 0.985 0 0;
-    --border: 0.68 0.22 355 / 25%;
-    --input: 0.68 0.22 355 / 15%;
-    --ring: 0.68 0.22 355;
+    --border: 0.65 0.22 20 / 25%;
+    --input: 0.65 0.22 20 / 15%;
+    --ring: 0.65 0.22 20;
     --chart-1: 0.646 0.222 41.116;
     --chart-2: 0.6 0.118 184.704;
     --chart-3: 0.398 0.07 227.392;
     --chart-4: 0.828 0.189 84.429;
     --chart-5: 0.769 0.188 70.08;
-    --sidebar: 0.15 0.08 280;
-    --sidebar-foreground: 0.96 0.02 280;
-    --sidebar-primary: 0.68 0.22 355;
-    --sidebar-primary-foreground: 0.1 0.06 280;
-    --sidebar-accent: 0.3 0.12 290;
-    --sidebar-accent-foreground: 0.96 0.02 280;
-    --sidebar-border: 0.68 0.22 355 / 20%;
-    --sidebar-ring: 0.68 0.22 355;
+    --sidebar: 0.15 0.07 15;
+    --sidebar-foreground: 0.97 0.02 80;
+    --sidebar-primary: 0.65 0.22 20;
+    --sidebar-primary-foreground: 0.97 0.02 80;
+    --sidebar-accent: 0.28 0.1 15;
+    --sidebar-accent-foreground: 0.97 0.02 80;
+    --sidebar-border: 0.65 0.22 20 / 20%;
+    --sidebar-ring: 0.65 0.22 20;
   }
 
   * {
@@ -64,23 +94,86 @@
   }
 
   body {
-    font-family: "Nunito", system-ui, sans-serif;
-    background: oklch(0.1 0.06 280);
-    color: oklch(0.96 0.02 280);
+    font-family: "Outfit", system-ui, sans-serif;
+    background: oklch(0.1 0.05 10);
+    color: oklch(0.97 0.02 80) !important;
+    -webkit-text-fill-color: initial;
   }
 
   html {
     scroll-behavior: smooth;
   }
+
+  /* Force light-colored text on all native inputs so nothing appears black */
+  input,
+  textarea,
+  select,
+  button {
+    color: oklch(0.97 0.02 80) !important;
+    -webkit-text-fill-color: oklch(0.97 0.02 80) !important;
+  }
+
+  input[type="date"] {
+    color: oklch(0.97 0.02 80) !important;
+    -webkit-text-fill-color: oklch(0.97 0.02 80) !important;
+    color-scheme: dark !important;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1) brightness(1.5);
+    cursor: pointer;
+  }
+
+  input[type="date"]::-webkit-datetime-edit,
+  input[type="date"]::-webkit-datetime-edit-fields-wrapper,
+  input[type="date"]::-webkit-datetime-edit-text,
+  input[type="date"]::-webkit-datetime-edit-month-field,
+  input[type="date"]::-webkit-datetime-edit-day-field,
+  input[type="date"]::-webkit-datetime-edit-year-field {
+    color: oklch(0.97 0.02 80) !important;
+    -webkit-text-fill-color: oklch(0.97 0.02 80) !important;
+  }
+
+  /* Prevent any element from defaulting to black text */
+  * {
+    color: inherit;
+  }
+
+  /* Ensure all text elements inherit light color and never fall back to black */
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  span,
+  div,
+  label,
+  li,
+  a,
+  td,
+  th {
+    color: inherit;
+  }
+
+  /* Override any shadcn or browser defaults that set black */
+  [class*="text-foreground"],
+  [class*="text-black"],
+  [class*="text-gray"],
+  [class*="text-slate"] {
+    color: oklch(0.97 0.02 80) !important;
+    -webkit-text-fill-color: oklch(0.97 0.02 80) !important;
+  }
 }
 
 @layer utilities {
   .font-heading {
-    font-family: "Cormorant Garamond", Georgia, serif;
+    font-family: "Fraunces", "Instrument Serif", Georgia, serif;
   }
 
   .font-body {
-    font-family: "Nunito", system-ui, sans-serif;
+    font-family: "Outfit", system-ui, sans-serif;
   }
 
   .text-gold {
@@ -92,15 +185,15 @@
   }
 
   .text-pink-glow {
-    color: oklch(0.68 0.22 355);
+    color: oklch(0.65 0.22 20);
   }
 
   .text-pink-light {
-    color: oklch(0.8 0.18 355);
+    color: oklch(0.78 0.18 20);
   }
 
   .bg-deep-burgundy {
-    background-color: oklch(0.1 0.06 280);
+    background-color: oklch(0.1 0.05 10);
   }
 
   .border-gold\/40 {
@@ -199,11 +292,11 @@
   @keyframes pulse-glow {
     0%,
     100% {
-      box-shadow: 0 0 18px oklch(0.68 0.22 355 / 0.35);
+      box-shadow: 0 0 18px oklch(0.65 0.22 20 / 0.35);
     }
     50% {
-      box-shadow: 0 0 40px oklch(0.68 0.22 355 / 0.75), 0 0 80px
-        oklch(0.68 0.22 355 / 0.3);
+      box-shadow: 0 0 40px oklch(0.65 0.22 20 / 0.75), 0 0 80px
+        oklch(0.65 0.22 20 / 0.3);
     }
   }
 
@@ -278,7 +371,7 @@
     background: linear-gradient(
       90deg,
       oklch(0.82 0.14 80),
-      oklch(0.8 0.18 355),
+      oklch(0.78 0.18 20),
       oklch(0.82 0.14 80)
     );
     background-size: 200% 200%;

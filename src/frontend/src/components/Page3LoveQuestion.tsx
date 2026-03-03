@@ -52,12 +52,18 @@ export default function Page3LoveQuestion({ onYes }: Page3LoveQuestionProps) {
         <div className="space-y-4 animate-fade-in">
           <div className="text-6xl animate-bounce-slow">💕</div>
           <h1
-            className="font-heading text-3xl md:text-5xl font-bold text-white leading-tight"
-            style={{ textShadow: "0 2px 40px oklch(0.72 0.25 355 / 0.6)" }}
+            className="font-heading text-3xl md:text-5xl font-bold leading-tight"
+            style={{
+              color: "oklch(0.97 0.02 80)",
+              textShadow: "0 2px 40px oklch(0.65 0.22 20 / 0.6)",
+            }}
           >
             Do you love me forever?
           </h1>
-          <p className="text-pink-glow/70 font-body text-sm">
+          <p
+            className="font-body text-sm"
+            style={{ color: "oklch(0.65 0.22 20 / 0.80)" }}
+          >
             There is only one right answer here 😉
           </p>
         </div>
@@ -74,9 +80,9 @@ export default function Page3LoveQuestion({ onYes }: Page3LoveQuestionProps) {
           </StyledButton>
         </div>
 
-        {/* NO / Dodging button area */}
+        {/* NO / Dodging button area — overflow-visible so button can escape the container */}
         <div
-          className="relative h-32 w-full flex items-center justify-center animate-fade-in-up"
+          className="relative h-24 w-full flex items-center justify-center animate-fade-in-up overflow-visible"
           style={{ animationDelay: "0.5s" }}
         >
           {noStep === 0 ? (
@@ -90,11 +96,16 @@ export default function Page3LoveQuestion({ onYes }: Page3LoveQuestionProps) {
               No
             </StyledButton>
           ) : (
-            // Dodging word — one at a time
+            // Dodging button — one phrase at a time, runs away on hover
             <button
               type="button"
-              className="transition-transform duration-300 ease-out cursor-pointer select-none inline-block px-6 py-3 rounded-full border-2 border-pink-glow/60 bg-pink-glow/10 text-pink-light font-heading text-base md:text-lg font-semibold backdrop-blur-sm hover:border-pink-glow hover:bg-pink-glow/20 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-glow"
-              style={{ transform: dodgeTransform }}
+              className="transition-transform duration-300 ease-out cursor-pointer select-none inline-block px-6 py-3 rounded-full border-2 backdrop-blur-sm focus:outline-none"
+              style={{
+                transform: dodgeTransform,
+                borderColor: "oklch(0.65 0.22 20 / 0.60)",
+                background: "oklch(0.65 0.22 20 / 0.10)",
+                color: "oklch(0.78 0.18 20)",
+              }}
               onMouseEnter={dodge}
               onTouchStart={dodge}
               onClick={handleNoClick}
@@ -107,8 +118,11 @@ export default function Page3LoveQuestion({ onYes }: Page3LoveQuestionProps) {
 
         {noStep > 0 && (
           <p
-            className="text-white/40 text-xs font-body animate-fade-in -mt-4"
-            style={{ animationDelay: "0.1s" }}
+            className="font-body text-xs animate-fade-in -mt-4"
+            style={{
+              color: "oklch(0.97 0.02 80 / 0.40)",
+              animationDelay: "0.1s",
+            }}
           >
             (Try clicking it... if you dare 😏)
           </p>
